@@ -20,8 +20,12 @@ public class Main {
 				charCounter.put(c, 1);
 			}
 		}
+
 		
-		System.out.println(charCounter);
+		for (Character key : charCounter.keySet()) {
+			int value2 = charCounter.get(key);
+			System.out.println(key + " : " + value2);
+		}
 		
 	}
 
